@@ -30,7 +30,8 @@ add your own hostname on your `/etc/hosts`
 
 Service|Address outside containers
 -------|--------------------------
-Webserver|[localhost:55000](http://localhost:55000)
+Webserver|[localhost:25000](http://localhost:25000)
+MySQL|**host:** `localhost`; **port:** `25002`
 
 ## Hosts within your environment ##
 
@@ -39,6 +40,7 @@ You'll need to configure your application to use any services you enabled:
 Service|Hostname|Port number
 ------|---------|-----------
 php-fpm|php-fpm|9000
+MySQL|mysql|3306 (default)
 
 # Docker compose cheatsheet #
 
